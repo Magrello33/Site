@@ -11,14 +11,6 @@
       background: #f0f4f8;
       color: #333;
     }
-    header {
-      background-color: #004aad;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-height: 80px;
-    }
     .banner {
       width: 100%;
       height: auto;
@@ -60,15 +52,26 @@
     form button:hover {
       background-color: #00327a;
     }
-    .whatsapp-button {
-      display: inline-block;
-      padding: 12px 25px;
+    .testimonials {
+      background-color: #eaf6ff;
+      border-radius: 10px;
+      padding: 20px;
+      font-style: italic;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
       background-color: #25D366;
       color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 18px;
-      font-weight: bold;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+    .floating-whatsapp img {
+      width: 30px;
+      height: 30px;
     }
     footer {
       text-align: center;
@@ -80,19 +83,21 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="Logotipo.png" alt="Logo Conecta Veículos" />
-  </header>
   <img class="banner" src="Banner.jpg" alt="Banner Conecta Veículos" />
   <div class="container">
     <div class="card">
       <h2>Por que trabalhar com a Conecta Veículos?</h2>
       <ul>
         <li>Ganhos fixos semanais com bônus por desempenho</li>
-        <li>Rota garantida com empresas parceiras</li>
-        <li>Suporte completo e atendimento dedicado</li>
-        <li>Valorizamos você como profissional</li>
+        <li>Suporte direto com a empresa (sem atravessadores)</li>
+        <li>Atendimento rápido e humanizado</li>
+        <li>Empresa reconhecida pela seriedade e compromisso</li>
       </ul>
+      <div class="testimonials">
+        <p>“Nunca tive problemas, sempre fui pago certinho. A Conecta é firmeza demais.”</p>
+        <p>“Aqui é diferente. Você fala direto com quem resolve.”</p>
+        <p>“Entregas bem organizadas e ótimo suporte. Tô gostando muito.”</p>
+      </div>
     </div>
     <div class="card">
       <h2>Sobre a Conecta Veículos</h2>
@@ -110,14 +115,14 @@
         <input type="hidden" name="_next" value="https://magrello33.github.io/Site/sucesso.html">
       </form>
     </div>
-    <div class="card">
-      <h2>Fale conosco via WhatsApp</h2>
-      <p>Está com dúvidas? Quer mais informações? Clique no botão abaixo e fale direto com nosso atendimento:</p>
-      <a class="whatsapp-button" href="https://wa.me/554797313424" target="_blank">Falar no WhatsApp</a>
-    </div>
   </div>
+
+  <a class="floating-whatsapp" href="https://wa.me/554797313424" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  </a>
+
   <footer>
     © 2025 Conecta Veículos. Todos os direitos reservados.
   </footer>
 </body>
-</html>
+</html
