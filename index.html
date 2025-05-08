@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Conecta Veículos</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -20,8 +16,14 @@
       width: 100%;
       height: auto;
       display: block;
-      object-fit: cover;
+      object-fit: contain;
       max-height: 300px;
+    }
+
+    @media (max-width: 600px) {
+      .banner {
+        max-height: 200px;
+      }
     }
 
     .container {
@@ -32,7 +34,6 @@
 
     h2 {
       color: #004aad;
-      margin-top: 0;
     }
 
     .card {
@@ -99,26 +100,11 @@
       color: white;
       margin-top: 40px;
     }
-
-    /* Responsivo */
-    @media (max-width: 600px) {
-      .card, form input, form button {
-        font-size: 15px;
-      }
-
-      .container {
-        padding: 10px;
-      }
-
-      .banner {
-        max-height: 200px;
-      }
-    }
   </style>
 </head>
 <body>
   <img class="banner" src="Faxada.png" alt="Fachada da Conecta Veículos" />
-  
+
   <div class="container">
     <div class="card">
       <h2>Por que trabalhar com a Conecta Veículos?</h2>
@@ -134,10 +120,12 @@
         <p>“Entregas bem organizadas e ótimo suporte. Tô gostando muito.”</p>
       </div>
     </div>
+
     <div class="card">
       <h2>Sobre a Conecta Veículos</h2>
       <p>Estamos há mais de 10 anos conectando motoristas a oportunidades reais. Trabalhamos com grandes empresas do mercado e buscamos sempre oferecer segurança, estabilidade e ganhos justos para nossos parceiros.</p>
     </div>
+
     <div class="card">
       <h2>Cadastre-se agora mesmo</h2>
       <p>Preencha o formulário abaixo e entraremos em contato com você. Simples, rápido e sem compromisso:</p>
