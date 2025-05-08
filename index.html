@@ -5,25 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Conecta Veículos</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f0f4f8;
       color: #333;
     }
+
     .banner {
       width: 100%;
       height: auto;
       display: block;
+      object-fit: cover;
+      max-height: 300px;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 20px;
     }
+
     h2 {
       color: #004aad;
+      margin-top: 0;
     }
+
     .card {
       background: white;
       border-radius: 10px;
@@ -31,9 +42,11 @@
       margin-bottom: 25px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+
     ul {
       padding-left: 20px;
     }
+
     form input, form button {
       width: 100%;
       padding: 12px;
@@ -42,6 +55,7 @@
       border: 1px solid #ccc;
       font-size: 16px;
     }
+
     form button {
       background-color: #004aad;
       color: white;
@@ -49,15 +63,18 @@
       cursor: pointer;
       transition: background 0.3s;
     }
+
     form button:hover {
       background-color: #00327a;
     }
+
     .testimonials {
       background-color: #eaf6ff;
       border-radius: 10px;
       padding: 20px;
       font-style: italic;
     }
+
     .floating-whatsapp {
       position: fixed;
       bottom: 20px;
@@ -69,10 +86,12 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 999;
     }
+
     .floating-whatsapp img {
       width: 30px;
       height: 30px;
     }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -80,10 +99,26 @@
       color: white;
       margin-top: 40px;
     }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .card, form input, form button {
+        font-size: 15px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      .banner {
+        max-height: 200px;
+      }
+    }
   </style>
 </head>
 <body>
-  <img class="Faxada.png" src="Faxada.png" alt="Faxada.png" />
+  <img class="banner" src="Faxada.png" alt="Fachada da Conecta Veículos" />
+  
   <div class="container">
     <div class="card">
       <h2>Por que trabalhar com a Conecta Veículos?</h2>
@@ -125,4 +160,4 @@
     © 2013 Conecta Veículos. Todos os direitos reservados.
   </footer>
 </body>
-</html
+</html>
