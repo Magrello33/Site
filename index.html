@@ -12,18 +12,15 @@
       color: #333;
     }
 
-    .banner {
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .banner-container img {
       width: 100%;
       height: auto;
       display: block;
-      object-fit: contain;
-      max-height: 300px;
-    }
-
-    @media (max-width: 600px) {
-      .banner {
-        max-height: 200px;
-      }
     }
 
     .container {
@@ -103,7 +100,9 @@
   </style>
 </head>
 <body>
-  <img class="banner" src="Faxada.png" alt="Fachada da Conecta Veículos" />
+  <div class="banner-container">
+    <img src="Faxada.png" alt="Fachada da Conecta Veículos">
+  </div>
 
   <div class="container">
     <div class="card">
