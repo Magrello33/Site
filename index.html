@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conecta Veículos</title>
   <style>
     body {
@@ -12,12 +12,7 @@
       color: #333;
     }
 
-    .banner-container {
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .banner-container img {
+    .banner {
       width: 100%;
       height: auto;
       display: block;
@@ -43,6 +38,20 @@
 
     ul {
       padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #004aad;
     }
 
     form input, form button {
@@ -92,18 +101,38 @@
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       background: #004aad;
       color: white;
-      margin-top: 40px;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .rastreador-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #004aad;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .rastreador-btn:hover {
+      background-color: #00327a;
     }
   </style>
 </head>
 <body>
-  <div class="banner-container">
-    <img src="Faxada.png" alt="Fachada da Conecta Veículos">
-  </div>
-
+  <img class="banner" src="Faxada.png" alt="Fachada Conecta Veículos" />
+  
   <div class="container">
     <div class="card">
       <h2>Por que trabalhar com a Conecta Veículos?</h2>
@@ -121,8 +150,20 @@
     </div>
 
     <div class="card">
-      <h2>Sobre a Conecta Veículos</h2>
-      <p>Estamos há mais de 10 anos conectando motoristas a oportunidades reais. Trabalhamos com grandes empresas do mercado e buscamos sempre oferecer segurança, estabilidade e ganhos justos para nossos parceiros.</p>
+      <h2>Como funciona o trabalho?</h2>
+      <p>Você faz entregas usando seu veículo (carro, van ou moto), recebendo uma rota organizada e suporte total. Nosso sistema garante repasses semanais e acompanhamento direto com a equipe Conecta.</p>
+    </div>
+
+    <div class="card">
+      <h2>Onde estamos</h2>
+      <p>Nosso ponto de apoio principal está em Joinville - SC, com atuação em várias cidades da região.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.8414439831516!2d-48.85743772458871!3d-26.30420387497432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de933fb45e16c5%3A0xa24c6310d0c67c2a!2sJoinville%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1715100000000!5m2!1spt-BR!2sbr"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>Temos rastreador veicular próprio</h2>
+      <p>Os veículos agregados à Conecta contam com tecnologia de rastreamento e segurança, com acesso exclusivo para controle e transparência nas operações.</p>
+      <a href="rastreador concta.html" class="rastreador-btn">Saiba mais</a>
     </div>
 
     <div class="card">
@@ -144,7 +185,8 @@
   </a>
 
   <footer>
-    © 2013 Conecta Veículos. Todos os direitos reservados.
+    © 2013 Conecta Veículos. Todos os direitos reservados.<br />
+    Desenvolvido por Conecta Web Solutions
   </footer>
 </body>
 </html>
